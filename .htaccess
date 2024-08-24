@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on RewriteBase /mvc/ RewriteCond %{REQUEST_URI} !^/mvc/public/
+  RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
